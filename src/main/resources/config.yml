@@ -1,0 +1,52 @@
+combat:
+  duration-seconds: 15
+  block-commands: true
+  blocked-commands:
+    - spawn
+    - home
+    - sethome
+    - tp
+    - tpa
+    - tpaccept
+    - tpadeny
+    - warp
+    - back
+    - ec
+    - enderchest
+    - feed
+    - heal
+    - fly
+    - repair
+    - "plot home"
+    - "clan home base"
+    - "trade accept"
+
+punishment:
+  kill-on-quit: false
+  broadcast-message: true
+
+npc:
+  duration-seconds: 15
+  name-format: "%player%"
+  killed-broadcast: "&c%player%'s combat NPC was eliminated by &e%killer%&c!"
+  killed-broadcast-unknown: "&c%player%'s combat NPC was eliminated!"
+  rejoin-notice: "&eYou rejoined before your combat NPC expired! Your health has been synchronized and you are still in combat."
+
+webhook:
+  enabled: false
+  url: ""
+  username: "CombatLog Watcher"
+  avatar-url: ""
+
+messages:
+  combat-enter: "&cYou are now in combat with &e%opponent%&c! Do not disconnect for &e%seconds%s&c."
+  combat-expired: "&aYou are no longer in combat."
+  combat-quit-punish: "&c%player% logged out during combat and was eliminated!"
+  command-blocked: "&cYou cannot execute that command while in combat!"
+  trust-disabled: "&cThe trust system is disabled because BetterTeams is managing team combat."
+  trust-added: "&aYou now trust &e%player%&a. Your attacks against them will not tag either of you in combat."
+  trust-removed: "&cYou no longer trust &e%player%&c."
+  trust-self: "&cYou cannot add yourself to your trust list."
+  trust-not-found: "&cPlayer not found."
+  trust-list-empty: "&7You do not trust any players."
+  trust-list-header: "&6Trusted players: &e%players%"

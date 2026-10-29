@@ -1,0 +1,25 @@
+﻿name: ${name}
+version: '${version}'
+main: com.riotwolfie.combatlog.CombatLogPlugin
+api-version: '${apiVersion}'
+description: ${description}
+authors: [ badambarfi ]
+softdepend: [ BetterTeams ]
+
+commands:
+  combatlog:
+    description: Main CombatLog command
+    aliases: [ cl, combat, ct ]
+    permission: combatlog.use
+    usage: /<command> [status|reload|untag]
+
+permissions:
+  combatlog.use:
+    description: Allows checking combat status
+    default: true
+  combatlog.bypass:
+    description: Bypasses combat tag and punishment
+    default: false
+  combatlog.admin:
+    description: Allows administrative commands like reload and untag
+    default: op
