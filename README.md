@@ -56,7 +56,6 @@ CombatLog/
 ├── settings.gradle.kts
 ├── LICENSE
 ├── README.md
-├── CHANGELOG.md
 └── src/
     ├── main/
     │   ├── java/
